@@ -1,0 +1,14 @@
+reviews:
+  pre_merge_checks:
+    custom_checks:
+      - name: "Code Duplication"
+        mode: "error"
+        instructions: "Avoid duplicated code. Shared or repeated logic should be extracted into reusable methods, helpers, or services."
+
+  path_instructions:
+    - path: "**/*.cs"
+      instructions: |
+        Review all C# source code and ensure the following:
+
+        - Avoid duplicated or repeated logic across the codebase. Shared logic should be extracted into
+          reusable methods, helpers, or services to maintain maintainability and consistency.
